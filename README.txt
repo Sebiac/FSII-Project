@@ -30,4 +30,4 @@ Credits:
 		jQuery (jquery.com)
 		Responsive Tools (github.com/ajlkn/responsive-tools)
 
-Link: https://prod.liveshare.vsengsaas.visualstudio.com/join?CABC2767370AC35F306359DE588B19AD5F8F
+Link: https://prod.liveshare.vsengsaas.visualstudio.com/join?0D5D96AD04B71D5C18F667B08BFA36321E0F
