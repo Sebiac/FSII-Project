@@ -1,9 +1,9 @@
 // Widget Música - Adaptado para múltiples canciones locales
 document.addEventListener('DOMContentLoaded', function() {
     const songs = [
-        { title: 'Montagem Xonada', artist: 'MXZI, DJ SAMIR, DJ JAVI26', src: 'assets/music/song1.mp3', img: 'images/pic01.jpg' },
-        { title: 'Montagem Tomada', artist: 'MXZI', src: 'assets/music/song2.mp3', img: 'images/pic02.jpg' },
-        { title: 'Sem Freio', artist: 'JMILTON, REPSAJ', src: 'assets/music/song3.mp3', img: 'images/pic03.jpg' }
+        { title: 'Montagem Xonada', artist: 'MXZI, DJ SAMIR, DJ JAVI26', src: 'assets/music/song1.mp3', img: 'images/montagem_xonada.jpg' },
+        { title: 'Montagem Tomada', artist: 'MXZI', src: 'assets/music/song2.mp3', img: 'images/montagem_tomada.jpg' },
+        { title: 'Sem Freio', artist: 'JMILTON, REPSAJ', src: 'assets/music/song3.mp3', img: 'images/sem_freio.jpg' }
     ];
     let currentSong = 0;
     const audio = document.getElementById('audioSrc');

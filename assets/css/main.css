@@ -74,6 +74,12 @@ input, select, textarea {
 
 /* Basic */
 
+	.phonk-title {
+		font-family: 'Orbitron', sans-serif;
+		letter-spacing: 2px;
+		font-weight: 700;
+	}
+
 	html {
 		box-sizing: border-box;
 	}
@@ -2176,7 +2182,7 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		background-image: url("../../images/header.jpg");
+		background-image: url("../../images/header.png");
 		background-size: cover;
 		background-position: center center;
 		background-attachment: fixed;
