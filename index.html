@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/musica.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body class="homepage is-preload">
@@ -377,6 +378,7 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/musica.js"></script>
 
+<<<<<<< HEAD
 
 
     <!-- Widget Música -->
@@ -411,6 +413,159 @@
             </audio>
         </section>
     </div>
+=======
+    <!-- Reproductor de música de fondo -->
+    <style>
+        #music-player-spotify {
+            position: fixed;
+            bottom: 24px;
+            left: 24px;
+            z-index: 9999;
+            background: #181818;
+            color: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding: 10px 18px 10px 10px;
+            min-width: 260px;
+            max-width: 340px;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        #music-player-spotify input[type="range"] {
+            height: 4px
+        }
+        
+        #music-player-spotify img {
+            width: 48px;
+            height: 48px;
+            border-radius: 8px;
+            object-fit: cover;
+            background: #222;
+        }
+        
+        #music-player-spotify .info {
+            flex: 1;
+            min-width: 0;
+        }
+        
+        #music-player-spotify .title {
+            font-weight: bold;
+            font-size: 1em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        #music-player-spotify .controls {
+            display: flex;
+            align-items: center;
+            gap: 3px;
+        }
+        
+        #music-player-spotify button {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.3em;
+            cursor: pointer;
+            padding: 2px 6px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        
+        #music-player-spotify button:hover {
+            background: #282828;
+        }
+    </style>
+    <div id="music-player-spotify">
+        <img id="cover-art" src="assets/images/cover1.jpg" alt="cover" />
+        <div class="info">
+            <div class="title" id="song-title">Canción 1</div>
+        </div>
+        <div class="controls">
+            <button id="prev-btn" title="Anterior"><span class="material-icons">skip_previous</span></button>
+            <button id="play-pause-btn" title="Pausar/Reproducir"><span class="material-icons">play-arrow</span></button>
+            <button id="next-btn" title="Siguiente"><span class="material-icons">skip_next</span></button>
+            <span class="material-icons" style="vertical-align: middle;">volume_up</span>
+            <input type="range" id="volume-slider" min="0" max="3" step="0.01" value="0.5" title="Volumen" style="width:70px;vertical-align:middle;">
+        </div>
+        <audio id="bg-music" autoplay style="display:none;"></audio>
+    </div>
+    <script>
+        // Lista de canciones (agrega tus archivos mp3 y portadas en la carpeta correspondiente)
+        const songs = [{
+            title: "Canción 1",
+            src: "assets/music/song1.mp3",
+            cover: "assets/images/cover1.jpg"
+        }, {
+            title: "Canción 2",
+            src: "assets/music/song2.mp3",
+            cover: "assets/images/cover2.jpg"
+        }, {
+            title: "Canción 3",
+            src: "assets/music/song3.mp3",
+            cover: "assets/images/cover3.jpg"
+        }];
+        let currentSong = 0;
+        const audio = document.getElementById('bg-music');
+        const title = document.getElementById('song-title');
+        const playPauseBtn = document.getElementById('play-pause-btn');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const cover = document.getElementById('cover-art');
+        const volumeSlider = document.getElementById('volume-slider');
+
+        function loadSong(index, autoPlay = true) {
+            audio.src = songs[index].src;
+            title.textContent = songs[index].title;
+            cover.src = songs[index].cover;
+            if (autoPlay) {
+                // Algunos navegadores requieren interacción, pero intentamos reproducir igual
+                const playPromise = audio.play();
+                if (playPromise !== undefined) {
+                    playPromise.catch(() => {});
+                }
+                playPauseBtn.querySelector('.material-icons').textContent = 'pause';
+            }
+        }
+
+        // Control de volumen
+        volumeSlider.addEventListener('input', function() {
+            audio.volume = parseFloat(this.value);
+        });
+        // Volumen inicial
+        audio.volume = volumeSlider.value;
+
+        playPauseBtn.onclick = function() {
+            const icon = playPauseBtn.querySelector('.material-icons')
+            if (audio.paused) {
+                audio.play();
+                icon.textContent = 'pause';
+            } else {
+                audio.pause();
+                icon.textContent = 'play_arrow';
+            }
+        };
+        prevBtn.onclick = function() {
+            currentSong = (currentSong - 1 + songs.length) % songs.length;
+            loadSong(currentSong);
+        };
+        nextBtn.onclick = function() {
+            currentSong = (currentSong + 1) % songs.length;
+            loadSong(currentSong);
+        };
+        audio.onended = function() {
+            nextBtn.onclick();
+        };
+        // Cargar la primera canción al iniciar
+        window.addEventListener('DOMContentLoaded', function() {
+            loadSong(currentSong, true);
+        });
+    </script>
+>>>>>>> 234908d1d3fcf2eaf1dee9bf6260458819a7762a
 
 </body>
 
