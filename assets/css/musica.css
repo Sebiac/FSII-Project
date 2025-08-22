@@ -15,7 +15,12 @@
 
 #music-widget-container.music-widget-floating #song-title {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
+}
+
+#music-widget-container.music-widget-floating #song-artist {
+    margin-bottom: 8px;
+    margin-top: 0;
 }
 
 #music-widget-container.music-widget-floating .slidecontainer-one {
@@ -35,10 +40,10 @@
     background: #181028;
     border-radius: 1em 1em 1em 1.5em;
     box-shadow: 0 4px 24px rgba(80, 0, 120, 0.18);
-    padding: 1.2em 1em 1.2em 1em;
+    padding: 0.7em 1em 0.7em 1em;
     color: #fff;
     transition: box-shadow 0.2s;
-    min-height: 140px;
+    min-height: 90px;
     height: auto;
     display: flex;
     flex-direction: column;
