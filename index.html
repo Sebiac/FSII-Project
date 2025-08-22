@@ -394,6 +394,10 @@
             max-width: 340px;
             font-family: 'Segoe UI', Arial, sans-serif;
         }
+
+        #music-player-spotify input[type="range"] {
+            height: 4px
+        }
         
         #music-player-spotify img {
             width: 48px;
@@ -419,7 +423,7 @@
         #music-player-spotify .controls {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 3px;
         }
         
         #music-player-spotify button {
@@ -446,7 +450,8 @@
             <button id="prev-btn" title="Anterior"><span class="material-icons">skip_previous</span></button>
             <button id="play-pause-btn" title="Pausar/Reproducir"><span class="material-icons">play-arrow</span></button>
             <button id="next-btn" title="Siguiente"><span class="material-icons">skip_next</span></button>
-            <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5" title="Volumen" style="width:70px;vertical-align:middle;">
+            <span class="material-icons" style="vertical-align: middle;">volume_up</span>
+            <input type="range" id="volume-slider" min="0" max="3" step="0.01" value="0.5" title="Volumen" style="width:70px;vertical-align:middle;">
         </div>
         <audio id="bg-music" autoplay style="display:none;"></audio>
     </div>
