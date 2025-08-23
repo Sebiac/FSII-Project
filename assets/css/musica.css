@@ -29,6 +29,9 @@
     justify-content: center;
 }
 
+
+/* Fondo degradado 50% transparente en todo el widget */
+
 #music-widget-container.music-widget-floating {
     position: fixed;
     left: 24px;
@@ -37,7 +40,7 @@
     width: 320px;
     min-width: 220px;
     max-width: 95vw;
-    background: #181028;
+    background: linear-gradient(90deg, rgba(239, 131, 118, 0.7) 0%, rgba(124, 58, 237, 0.7) 100%);
     border-radius: 1em 1em 1em 1.5em;
     box-shadow: 0 4px 24px rgba(80, 0, 120, 0.18);
     padding: 0.7em 1em 0.7em 1em;
@@ -170,9 +173,15 @@
     background: transparent;
 }
 
+
+/* Invertido: de rosa a morado */
+
+
+/* 50% transparente */
+
 #completionBar {
     height: 100%;
-    background: linear-gradient(90deg, #b39ddb 0%, #7c3aed 100%);
+    background: linear-gradient(90deg, rgba(239, 131, 118, 0.7) 0%, rgba(124, 58, 237, 0.7) 100%);
     width: 0%;
     position: absolute;
     left: 0;
@@ -192,26 +201,32 @@
     gap: 0.7em;
 }
 
+
+/* Botones con degradado invertido */
+
+
+/* 50% transparente */
+
 .play-circle,
 .pause-circle {
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: #b39ddb;
+    background: linear-gradient(90deg, rgba(239, 131, 118, 0.7) 0%, rgba(124, 58, 237, 0.7) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    box-shadow: 0 2px 8px rgba(179, 157, 219, 0.2);
+    box-shadow: 0 2px 8px rgba(239, 131, 118, 0.2);
     transition: background 0.2s;
     font-size: 2rem;
-    color: #181028;
+    color: #fff;
 }
 
 .pause-circle {
-    background: #181028;
-    border: 2px solid #b39ddb;
-    color: #b39ddb;
+    /* Mantener el degradado, pero con borde para distinguir */
+    border: 2px solid #ef8376;
+    color: #fff;
 }
 
 .vynl {
