@@ -2641,10 +2641,13 @@ input, select, textarea {
 			}
 
 		.carousel .reel {
-			white-space: nowrap;
-			position: relative;
+			display: flex;
+			gap: 5em;                /* espacio entre cards: ajusta aquí */
+			overflow-x: auto;
+			padding: 0 2em;
 			-webkit-overflow-scrolling: touch;
-			padding: 0 2em 0 2em;
+			scroll-behavior: smooth;
+			white-space: normal;
 		}
 
 		.carousel article {
