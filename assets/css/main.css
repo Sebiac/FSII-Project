@@ -74,6 +74,21 @@ input, select, textarea {
 
 /* Basic */
 
+	.categoria-ruso {
+		color: #0033a0 !important;
+		font-weight: bold;
+	}
+
+	.categoria-brasil {
+		color: #009739;
+		font-weight: bold;
+	}
+
+	.categoria-chile {
+		color: #d52b1e;
+		font-weight: bold;
+	}
+
 	.phonk-title {
 		font-family: 'Orbitron', sans-serif;
 		letter-spacing: 2px;
