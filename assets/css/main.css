@@ -74,6 +74,17 @@ input, select, textarea {
 
 /* Basic */
 
+	.destacado-header {
+		color: #fff !important;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.destacado-sub-header {
+		color: #fff !important;
+		font-family: 'Montserrat', sans-serif;
+		font-size: 1.2em;
+	}
+
 	.categoria-ruso {
 		color: #0033a0 !important;
 		font-weight: bold;
@@ -104,7 +115,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #f0f4f4;
+		background: #f0f4f5;
 		color: #5b5b5b;
 		font-size: 15pt;
 		line-height: 1.85em;
@@ -2266,6 +2277,34 @@ input, select, textarea {
 		#header footer {
 			margin: 1em 0 0 0;
 		}
+		
+		#logo img {
+			display: block;
+			margin: 0 auto;
+			margin-top: 0px;
+			height: 700px;
+			width: auto;
+		}
+
+		#header .inner header > p {
+			margin-top: 0.5em;
+			margin-bottom: 0.5em;
+		}
+
+		#header .inner header hr {
+			margin-top: -2em;
+			margin-bottom: 2em;
+		}
+
+		@media screen and (max-width: 600px) {
+			#header .inner header > hr,
+			#header .inner header > p {
+				position: static;
+				width: 100%;
+				margin-top: 1em;
+				margin-bottom: 1em;
+			}
+		}
 
 	body.homepage #header {
 		height: 100vh;
@@ -2429,7 +2468,7 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: #fff;
+		background: #a084ca;
 		text-align: center;
 		padding: 4.5em 0 4.5em 0;
 		margin-bottom: 0;
