@@ -1,0 +1,221 @@
+/* Estilos exclusivos para catalogo-phonk-brasileno.html (Phonk Brasileño) */
+
+
+/* Fondo verde degradado para barra de navegación y header principal solo en catálogo */
+
+
+/* Fondo verde degradado para barra de navegación y header principal solo en catálogo */
+
+#header,
+#nav {
+    background: linear-gradient(90deg, #0033a0 0%, #4a90e2 100%) !important;
+    box-shadow: 0 2px 16px rgba(0, 151, 57, 0.10);
+}
+
+.major {
+    background: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 0 1.2em 0 !important;
+    margin-bottom: 1.2em;
+    text-align: center;
+}
+
+.major h2,
+.major p {
+    background: linear-gradient(90deg, #0033a0 0%, #4a90e2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+
+/* Ocultar barra de volumen en los reproductores de audio */
+
+audio::-webkit-media-controls-volume-slider,
+audio::-webkit-media-controls-mute-button {
+    display: none !important;
+}
+
+audio::-webkit-media-controls-volume-control-container {
+    display: none !important;
+}
+
+audio::-moz-media-controls-volume-control {
+    display: none !important;
+}
+
+audio::-ms-media-controls-volume-control {
+    display: none !important;
+}
+
+.catalog-price {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: 0.2em;
+    background: linear-gradient(90deg, #0033a0 0%, #4a90e2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.grad-text {
+    background: linear-gradient(90deg, #0033a0 0%, #4a90e2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.catalog-card {
+    background: linear-gradient(120deg, rgba(0, 151, 57, 0.13) 0%, rgba(0, 230, 118, 0.13) 100%);
+    border-radius: 1.2em;
+    box-shadow: 0 4px 18px rgba(0, 151, 57, 0.10);
+    padding: 0.9em 1.2em 1.2em 1.2em;
+    margin-bottom: 1.2em;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    transition: box-shadow 0.2s, transform 0.2s;
+    border: 1.5px solid #00973933;
+    min-width: 0;
+    max-width: 340px;
+    width: 100%;
+    justify-content: flex-start;
+    height: 100%;
+    box-sizing: border-box;
+    /* Para alinear reproductor y botones al fondo */
+    position: relative;
+}
+
+.catalog-card .image.fit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.catalog-card .image.fit img {
+    border-radius: 0.7em;
+    box-shadow: 0 2px 8px rgba(0, 151, 57, 0.10);
+    margin-bottom: 0.5em;
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.catalog-card header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.catalog-actions {
+    display: flex;
+    gap: 0.4em;
+    margin-top: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+
+/* Alinear verticalmente los textos y reproductores en las tarjetas */
+
+.catalog-card>* {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.catalog-card audio {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 0.5em;
+    align-self: flex-end;
+    width: 95%;
+    /* Para que quede pegado al fondo de la tarjeta */
+    position: absolute;
+    bottom: 3.2em;
+    /* Altura aproximada de los botones + margen */
+    left: 0;
+    right: 0;
+}
+
+.catalog-card {
+    position: relative;
+    min-height: 480px;
+}
+
+.btn-catalog {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 0.92em;
+    border: none;
+    border-radius: 0.6em;
+    padding: 0.32em 0.7em;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 151, 57, 0.10);
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+    outline: none;
+}
+
+.btn-catalog.buy {
+    background: linear-gradient(90deg, #0033a0 0%, #4a90e2 100%);
+}
+
+.btn-catalog.cart {
+    background: linear-gradient(90deg, #4a90e2 0%, #0033a0 100%);
+}
+
+.btn-catalog:hover {
+    filter: brightness(1.08) saturate(1.2);
+    transform: scale(1.06);
+}
+
+.col-4.col-12-mobile {
+    flex: 1 1 30%;
+    max-width: 32%;
+    min-width: 260px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin: 0 1% 2em 1%;
+}
+
+@media screen and (max-width: 1200px) {
+    .col-4.col-12-mobile {
+        flex-basis: 48%;
+        max-width: 48%;
+        min-width: 220px;
+        margin: 0 1% 2em 1%;
+    }
+    .catalog-card {
+        max-width: 320px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .col-4.col-12-mobile {
+        flex-basis: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+    .catalog-card .image.fit img {
+        max-width: 90vw;
+    }
+    .catalog-card {
+        max-width: 95vw;
+    }
+}
