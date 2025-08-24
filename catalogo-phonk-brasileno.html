@@ -11,6 +11,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/catalogo-phonk-brasileno.css" />
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
@@ -26,155 +27,188 @@
                     <h1><a href="index.html" id="logo" class="phonk-title">Midnight Phonk</a></h1>
                 </header>
             </div>
-            <!-- Nav -->
             <nav id="nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li>
-                        <a href="#">Dropdown</a>
+                        <a href="#">Categorías</a>
                         <ul>
-                            <li><a href="#">Lorem ipsum dolor</a></li>
-                            <li><a href="#">Magna phasellus</a></li>
-                            <li><a href="#">Etiam dolore nisl</a></li>
-                            <li>
-                                <a href="#">And a submenu &hellip;</a>
-                                <ul>
-                                    <li><a href="#">Lorem ipsum dolor</a></li>
-                                    <li><a href="#">Phasellus consequat</a></li>
-                                    <li><a href="#">Magna phasellus</a></li>
-                                    <li><a href="#">Etiam dolore nisl</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Veroeros feugiat</a></li>
+                            <li><a href="#" class="categoria-ruso">Phonk Ruso</a></li>
+                            <li><a href="catalogo-phonk-brasileno.html" class="categoria-brasil">Phonk Brasileño</a></li>
+                            <li><a href="#" class="categoria-chile">Phonk Fiestas Patrias</a></li>
                         </ul>
                     </li>
-                    <li><a href="left-sidebar.html">Left Sidebar</a></li>
-                    <li><a href="right-sidebar.html">Right Sidebar</a></li>
-                    <li><a href="no-sidebar.html">No Sidebar</a></li>
+                    <li><a href="left-sidebar.html">Donaciones</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="no-sidebar.html">Sobre nosotros</a></li>
                 </ul>
             </nav>
+            <style>
+                .nav-orbitron a {
+                    font-family: 'Source Sans Pro', Arial, sans-serif !important;
+                    letter-spacing: 0.04em;
+                    font-weight: 400;
+                    font-size: 1em;
+                }
+            </style>
         </div>
         <!-- Main -->
         <div class="wrapper style1">
             <div class="container">
                 <header class="major">
-                    <h2 class="destacado-header phonk-title" style="font-size:2.2em;">Catálogo de Phonk Brasileño</h2>
-                    <p class="destacado-sub-header">Explora una selección de canciones representativas del phonk brasileño.</p>
+                    <h2 class="destacado-header phonk-title grad-text" style="font-size:2.2em;">Catálogo de Phonk Brasileño</h2>
+                    <p class="destacado-sub-header grad-text" style="font-size:1.2em;">Explora una selección de canciones representativas del phonk brasileño.</p>
                 </header>
-                <div class="row gtr-50">
+
+
+                <div class="row gtr-50 catalogo-phonk">
                     <div class="col-4 col-12-mobile">
-                        <section>
-                            <a href="#" class="image fit"><img src="images/midnight-phonk.png" alt="Midnight Phonk" /></a>
+                        <section class="catalog-card">
+                            <div class="catalog-price grad-text">$1.99 USD</div>
+                            <a href="#" class="image fit"><img src="images/senta-cara.jpg" alt="SENTA CARA" /></a>
                             <header>
-                                <h3>Midnight Phonk</h3>
+                                <h3 class="phonk-title" style="font-size:1.3em;">SENTA CARA</h3>
+                                <div class="phonk-artist">JMILTON</div>
                             </header>
-                            <audio controls id="audio1">
+                            <audio controls id="audio1" style="width:100%;margin:0.5em 0 0.7em 0;" onplay="this.volume=0.02" onvolumechange="this.volume=Math.min(this.volume,0.06)" controlsList="nodownload noplaybackrate novolume">
                                 <source src="assets/music/song1.mp3" type="audio/mpeg">
                                 Tu navegador no soporta el elemento de audio.
                             </audio>
+                            <div class="catalog-actions">
+                                <button class="btn-catalog buy">Comprar</button>
+                                <button class="btn-catalog cart">Añadir al carro</button>
+                            </div>
                         </section>
                     </div>
+
+
                     <div class="col-4 col-12-mobile">
-                        <section>
-                            <a href="#" class="image fit"><img src="images/sem_freio.jpg" alt="Sem Freio" /></a>
+                        <section class="catalog-card">
+                            <div class="catalog-price grad-text">$1.99 USD</div>
+                            <a href="#" class="image fit"><img src="images/montagem_tomada.jpg" alt="Montagem Tomada" /></a>
                             <header>
-                                <h3>Sem Freio</h3>
+                                <h3 class="phonk-title" style="font-size:1.3em;">Montagem Tomada</h3>
+                                <div class="phonk-artist">MXZI</div>
                             </header>
-                            <audio controls id="audio2">
+                            <audio controls id="audio2" style="width:100%;margin:0.5em 0 0.7em 0;" onplay="this.volume=0.02" onvolumechange="this.volume=Math.min(this.volume,0.06)" controlsList="nodownload noplaybackrate novolume">
                                 <source src="assets/music/song2.mp3" type="audio/mpeg">
                                 Tu navegador no soporta el elemento de audio.
                             </audio>
+                            <div class="catalog-actions">
+                                <button class="btn-catalog buy">Comprar</button>
+                                <button class="btn-catalog cart">Añadir al carro</button>
+                            </div>
                         </section>
                     </div>
+
+
                     <div class="col-4 col-12-mobile">
-                        <section>
-                            <a href="#" class="image fit"><img src="images/senta-cara.jpg" alt="Senta Cara" /></a>
+                        <section class="catalog-card">
+                            <div class="catalog-price grad-text">$1.99 USD</div>
+                            <a href="#" class="image fit"><img src="images/sem_freio.jpg" alt="Sem Freio" /></a>
                             <header>
-                                <h3>Senta Cara</h3>
+                                <h3 class="phonk-title" style="font-size:1.3em;">Sem Freio</h3>
+                                <div class="phonk-artist">JMILTON, REPSAJ</div>
                             </header>
-                            <audio controls id="audio3">
+                            <audio controls id="audio3" style="width:100%;margin:0.5em 0 0.7em 0;" onplay="this.volume=0.02" onvolumechange="this.volume=Math.min(this.volume,0.06)" controlsList="nodownload noplaybackrate novolume">
                                 <source src="assets/music/song3.mp3" type="audio/mpeg">
                                 Tu navegador no soporta el elemento de audio.
                             </audio>
+                            <div class="catalog-actions">
+                                <button class="btn-catalog buy">Comprar</button>
+                                <button class="btn-catalog cart">Añadir al carro</button>
+                            </div>
                         </section>
                     </div>
                 </div>
+
+
                 <div class="row gtr-50">
                     <div class="col-4 col-12-mobile">
-                        <section>
-                            <a href="#" class="image fit"><img src="images/acelerada.jpg" alt="Acelerada" /></a>
+                        <section class="catalog-card">
+                            <div class="catalog-price grad-text">$1.99 USD</div>
+                            <a href="#" class="image fit"><img src="images/vem-no-pique.jpg" alt="VEM NO PIQUE" /></a>
                             <header>
-                                <h3>Acelerada</h3>
+                                <h3 class="phonk-title" style="font-size:1.3em;">VEM NO PIQUE</h3>
+                                <div class="phonk-artist">MAFIA</div>
                             </header>
-                            <audio controls id="audio4">
+                            <audio controls id="audio4" style="width:100%;margin:0.5em 0 0.7em 0;" onplay="this.volume=0.02" onvolumechange="this.volume=Math.min(this.volume,0.06)" controlsList="nodownload noplaybackrate novolume">
                                 <source src="assets/music/song4.mp3" type="audio/mpeg">
                                 Tu navegador no soporta el elemento de audio.
                             </audio>
+                            <div class="catalog-actions">
+                                <button class="btn-catalog buy">Comprar</button>
+                                <button class="btn-catalog cart">Añadir al carro</button>
+                            </div>
                         </section>
                     </div>
+
+
                     <div class="col-4 col-12-mobile">
-                        <section>
-                            <a href="#" class="image fit"><img src="images/vem-no-pique.jpg" alt="Vem no Pique" /></a>
+                        <section class="catalog-card">
+                            <div class="catalog-price grad-text">$1.99 USD</div>
+                            <a href="#" class="image fit"><img src="images/acelerada.jpg" alt="ACELERADA" /></a>
                             <header>
-                                <h3>Vem no Pique</h3>
+                                <h3 class="phonk-title" style="font-size:1.3em;">ACELERADA</h3>
+                                <div class="phonk-artist">SMA$HER</div>
                             </header>
-                            <audio controls id="audio5">
+                            <audio controls id="audio5" style="width:100%;margin:0.5em 0 0.7em 0;" onplay="this.volume=0.02" onvolumechange="this.volume=Math.min(this.volume,0.06)" controlsList="nodownload noplaybackrate novolume">
                                 <source src="assets/music/song5.mp3" type="audio/mpeg">
                                 Tu navegador no soporta el elemento de audio.
                             </audio>
+                            <div class="catalog-actions">
+                                <button class="btn-catalog buy">Comprar</button>
+                                <button class="btn-catalog cart">Añadir al carro</button>
+                            </div>
                         </section>
                     </div>
+
+
                     <div class="col-4 col-12-mobile">
-                        <section>
-                            <a href="#" class="image fit"><img src="images/vei_sei.jpg" alt="Vei Sei" /></a>
+                        <section class="catalog-card">
+                            <div class="catalog-price grad-text">$1.99 USD</div>
+                            <a href="#" class="image fit"><img src="images/montagem_xonada.jpg" alt="Montagem Xonada" /></a>
                             <header>
-                                <h3>Vei Sei</h3>
+                                <h3 class="phonk-title" style="font-size:1.3em;">Montagem Xonada</h3>
+                                <div class="phonk-artist">MXZI, DJ SAMIR, DJ JAVI26</div>
                             </header>
-                            <audio controls id="audio6">
+                            <audio controls id="audio6" style="width:100%;margin:0.5em 0 0.7em 0;" onplay="this.volume=0.02" onvolumechange="this.volume=Math.min(this.volume,0.06)" controlsList="nodownload noplaybackrate novolume">
                                 <source src="assets/music/song6.mp3" type="audio/mpeg">
                                 Tu navegador no soporta el elemento de audio.
                             </audio>
+                            <div class="catalog-actions">
+                                <button class="btn-catalog buy">Comprar</button>
+                                <button class="btn-catalog cart">Añadir al carro</button>
+                            </div>
                         </section>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer -->
-        <div id="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <!-- Contact -->
-                        <section class="contact">
+
+
+                    <div class="col-4 col-12-mobile">
+                        <section class="catalog-card">
+                            <div class="catalog-price grad-text">$1.99 USD</div>
+                            <a href="#" class="image fit"><img src="images/vei_sei.jpg" alt="VEI SEI" /></a>
                             <header>
-                                <h3>Nisl turpis nascetur interdum?</h3>
+                                <h3 class="phonk-title" style="font-size:1.3em;">VEI SEI</h3>
+                                <div class="phonk-artist">repsaj</div>
                             </header>
-                            <p>Urna nisl non quis interdum mus ornare ridiculus egestas ridiculus lobortis vivamus tempor aliquet.</p>
-                            <ul class="icons">
-                                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-                                <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                                <li><a href="#" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
-                                <li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-                                <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
-                            </ul>
+                            <audio controls id="audio7" style="width:100%;margin:0.5em 0 0.7em 0;" onplay="this.volume=0.02" onvolumechange="this.volume=Math.min(this.volume,0.06)" controlsList="nodownload noplaybackrate novolume">
+                                <source src="assets/music/song7.mp3" type="audio/mpeg">
+                                Tu navegador no soporta el elemento de audio.
+                            </audio>
+                            <div class="catalog-actions">
+                                <button class="btn-catalog buy">Comprar</button>
+                                <button class="btn-catalog cart">Añadir al carro</button>
+                            </div>
                         </section>
-
-                        <!-- Copyright -->
-                        <div class="copyright">
-                            <ul class="menu">
-                                <li>&copy; Untitled. All rights reserved.</li>
-                                <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                            </ul>
-                        </div>
-
                     </div>
 
                 </div>
+
             </div>
         </div>
     </div>
-    <!-- Scripts -->
+    <!-- Scripts para menú desplegable -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.dropotron.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -184,17 +218,5 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
-<script>
-    // Inicializar el volumen de cada reproductor a 0.005 (0.5%) para que coincida con el widget
-    for (let i = 1; i <= 6; i++) {
-        const audio = document.getElementById('audio' + i);
-        if (audio) {
-            audio.volume = 0.005;
-        }
-    }
-</script>
-
-
-
 
 </html>
