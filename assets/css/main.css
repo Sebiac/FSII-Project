@@ -174,6 +174,19 @@ textarea {
     font-size: 1.2em;
 }
 
+.font-dest {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.card-img-top {
+    width: 100% !important;
+    height: 300px !important;
+    object-fit: contain;
+    border-radius: 8px 8px 0 0;
+}
+
 .categoria-ruso {
     color: #0033a0 !important;
     font-weight: bold;
@@ -2503,7 +2516,6 @@ body.homepage.is-preload #header:after {
 .carousel .reel {
     display: flex;
     gap: 5em;
-    /* espacio entre cards: ajusta aquí */
     overflow-x: auto;
     padding: 0 2em;
     -webkit-overflow-scrolling: touch;
@@ -2556,6 +2568,7 @@ body.homepage.is-preload #header:after {
 .carousel article .card-title,
 .carousel article h5,
 .carousel article h3 {
+    font-family: 'Orbitron', sans-serif;
     font-size: 1.2em;
     font-weight: bold;
     margin: 1em 0 0.5em 0;
@@ -2571,7 +2584,7 @@ body.homepage.is-preload #header:after {
 .carousel article .btn,
 .carousel article a.button {
     display: inline-block;
-    background: #ef8376;
+    background: #4b2673;
     color: #fff;
     padding: 0.5em 1.2em;
     border-radius: 6px;
