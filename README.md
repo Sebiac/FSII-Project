@@ -1,6 +1,7 @@
 Esta página permitirá a los usuarios poder comprar diferentes herramientas para la creación de música **PHONK** de diferentes estilos, como:
 - **Brasileño** 
 - **Ruso**
+- **Italiano**
   
 ***E incluso...***
 - **Fiestas patrias** ***(VIVA CHILE)***.
