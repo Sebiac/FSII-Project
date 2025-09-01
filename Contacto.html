@@ -21,17 +21,13 @@
 
 <body class="right-sidebar is-preload">
     <div id="page-wrapper">
-
         <!-- Header -->
         <div id="header">
-
-            <!-- Inner -->
             <div class="inner">
                 <header>
                     <h1><a href="index.html" id="logo" class="phonk-title">Midnight Phonk</a></h1>
                 </header>
             </div>
-
             <!-- Nav -->
             <nav id="nav">
                 <ul>
@@ -49,10 +45,8 @@
                     <li><a href="no-sidebar.html">Sobre nosotros</a></li>
                 </ul>
             </nav>
-
         </div>
-
-        <!-- Solo sección de contacto -->
+        <!-- Main -->
         <div class="wrapper style1">
             <div class="container">
                 <div class="row">
@@ -63,16 +57,16 @@
                                 <h3>Contáctanos</h3>
                             </header>
                             <p>Por favor, completa el siguiente formulario y nos pondremos en contacto contigo lo antes posible.</p>
-                            <form method="post" action="#">
+                            <form id="contactForm" method="post" action="#" novalidate>
                                 <div class="row gtr-50">
                                     <div class="col-6 col-12-mobile">
-                                        <input type="text" name="nombre" placeholder="Nombre completo" required />
+                                        <input type="text" name="nombre" id="nombre" placeholder="Nombre completo" required />
                                     </div>
                                     <div class="col-6 col-12-mobile">
-                                        <input type="email" name="email" placeholder="Correo electrónico" required />
+                                        <input type="email" name="email" id="email" placeholder="Correo electrónico" required />
                                     </div>
                                     <div class="col-12">
-                                        <select name="asunto" required>
+                                        <select name="asunto" id="asunto" required>
                                             <option value="">Selecciona el asunto</option>
                                             <option value="pago">Problemas con el sistema de pago</option>
                                             <option value="herramientas">Problemas con herramientas</option>
@@ -80,7 +74,7 @@
                                         </select>
                                     </div>
                                     <div class="col-12">
-                                        <textarea name="mensaje" placeholder="Describe tu problema o consulta" rows="5" required></textarea>
+                                        <textarea name="mensaje" id="mensaje" placeholder="Describe tu problema o consulta" rows="5" required></textarea>
                                     </div>
                                     <div class="col-12">
                                         <ul class="actions">
@@ -94,13 +88,11 @@
                 </div>
             </div>
         </div>
-
         <!-- Footer -->
         <div id="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-
                         <!-- Redes sociales -->
                         <section class="contact">
                             <header>
@@ -110,10 +102,8 @@
                                 <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
                                 <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
                                 <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-
                             </ul>
                         </section>
-
                         <!-- Copyright -->
                         <div class="copyright">
                             <ul class="menu">
@@ -121,15 +111,11 @@
                                 <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
                             </ul>
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </div>
-
     </div>
-
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.dropotron.min.js"></script>
@@ -139,6 +125,55 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/contacto-validacion.js"></script>
+</body>
+
+</html>
+
+<!-- Footer -->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <!-- Redes sociales -->
+                <section class="contact">
+                    <header>
+                        <h3>Síguenos en redes sociales</h3>
+                    </header>
+                    <ul class="icons">
+                        <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+                        <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+
+                    </ul>
+                </section>
+
+                <!-- Copyright -->
+                <div class="copyright">
+                    <ul class="menu">
+                        <li>&copy; Untitled. All rights reserved.</li>
+                        <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
 
