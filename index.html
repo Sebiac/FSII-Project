@@ -11,7 +11,6 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/musica.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
@@ -262,7 +261,8 @@
             </div>
         </div>
     </div>
-    <!-- Widget Música -->
+
+    
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.dropotron.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>
@@ -271,40 +271,7 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/musica.js"></script>
 
-
-    <!-- Widget Música flotante -->
-    <div id="music-widget-container" class="music-widget-floating">
-        <section class="implementation">
-            <div class="now-playing-board" id="now-playing-board-id">
-                <div class="now-playing-details">
-                    <h4 id="song-title">Canción 1</h4>
-                    <div id="song-artist" style="font-size:0.95em;color:#b39ddb;margin-bottom:2px;">Desconocido</div>
-                    <div class="slidecontainer-one">
-                        <input type="range" min="0" max="100" value="0" class="slider" id="range">
-                        <div id="completionBar"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="now-playing-board-bottom-bar" id="now-playing-board-bottom-bar-id"></div>
-            <div class="play-controls">
-                <img src="images/pic01.jpg" width=48 height=48 id="vynl-id" class="vynl" alt="Portada de la canción" />
-                <div class="play-buttons">
-                    <i class='fa fa-step-backward' style='font-size:16px' id="prev-song"></i>
-                    <div class='play-circle' id="playpause"><i class="fa fa-play" id="playpause-icon"></i></div>
-                    <i class='fa fa-step-forward' style='font-size:16px' id="next-song"></i>
-                </div>
-                <div class="volume-button">
-                    <i class='fa fa-volume-up' style='font-size:16px'></i>
-                    <input type="range" min="0" max="100" value="100" class="volume-slider" id="volume-slider">
-                </div>
-            </div>
-            <audio id="audioSrc" autoplay>
-            <source id="audioSource" src="assets/music/song1.mp3">
-        </audio>
-        </section>
-    </div>
 
 </body>
 
