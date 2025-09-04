@@ -50,7 +50,6 @@
 
 
 /* Enlaces de login y registro en color morado oscuro */
-
 #nav ul li ul li a.purple-link,
 a.iniciar-sesion.purple-link,
 a.registro.purple-link {
@@ -2147,7 +2146,7 @@ header .icon.circled {
     background-attachment: fixed;
     color: #fff;
     text-align: center;
-    padding: 7.5em 0 2em 0;
+    padding: 3em 0 1em 0;
     cursor: default;
 }
 
