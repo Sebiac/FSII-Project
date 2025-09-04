@@ -43,28 +43,44 @@
         </div>
 
                 <!-- Comienzo de formulario -->
-
-        <div class="wrapper style1" style="display: flex; justify-content: center; align-items: center; min-height: 70vh;">
-            <div style="background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('images/header.png') center center/cover no-repeat; border-radius: 18px; max-width: 370px; width: 100%; margin: 0 auto; padding: 2.5rem 2rem; box-shadow: 0 4px 24px rgba(0,0,0,0.25);">
-                <section class="contact" style="margin: 0;">
-                    <header style="text-align: center;">
-                        <h3 style="margin-bottom: 1.5rem; color: #fff;">Registro</h3>
-                    </header>
-                    <form id="registerForm" method="post" action="#" novalidate>
-                        <div style="display: flex; flex-direction: column; gap: 1.1rem;">
-                            <input type="text" name="nombre" id="register-nombre" placeholder="Nombre completo" required style="border-radius: 8px; padding: 0.7rem; border: none;" />
-                            <input type="email" name="email" id="register-email" placeholder="Correo electrónico" required style="border-radius: 8px; padding: 0.7rem; border: none;" />
-                            <input type="password" name="password" id="register-password" placeholder="Contraseña" required style="border-radius: 8px; padding: 0.7rem; border: none;" />
-                            <input type="password" name="confirm-password" id="register-confirm-password" placeholder="Confirmar contraseña" required style="border-radius: 8px; padding: 0.7rem; border: none;" />
-                            <input type="submit" value="Registrarse" class="primary" style="border-radius: 8px; padding: 0.7rem; margin-top: 0.5rem;" />
-                            <div style="text-align:center; margin-top: 0.5rem;">
-                                <a href="login.html" style="color: #b6ffb0;">¿Ya tienes cuenta? Inicia sesión</a>
+        <section class="vh-100 gradient-custom" style="margin-bottom: 0; padding-bottom: 0;">
+            <div class="container py-5 h-100" style="margin-bottom: 0; padding-bottom: 0;">
+                <div class="row d-flex justify-content-center align-items-center h-100" style="margin-bottom: 0; padding-bottom: 0;">
+                    <div class="col-5 col-md-6 col-lg-8 col-xl-3"> <!-- Más delgado -->
+                        <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                            <div class="card-body p-4 text-center"> <!-- Menos padding -->
+                                <div class="mb-4 mt-2 pb-3">
+                                    <img src="images/midnight-phonk.png" alt="Logo Midnight Phonk" style="max-width:240px; margin-bottom: 1rem;">
+                                    <p class="text-white-50 mb-4">Por favor, ingrese sus datos</p>
+                                    <form id="registerForm" novalidate>
+                                        <div class="form-outline form-white mb-3">
+                                            <input type="text" id="register-nombre" class="form-control form-control-sm" placeholder="Nombre completo" required />
+                                        </div>
+                                        <div class="form-outline form-white mb-3">
+                                            <input type="email" id="register-email" class="form-control form-control-sm" placeholder="Correo electrónico" required />
+                                        </div>
+                                        <div class="form-outline form-white mb-3">
+                                            <input type="email" id="register-confirm-email" class="form-control form-control-sm" placeholder="Confirmar Correo electrónico" required />
+                                        </div>
+                                        <div class="form-outline form-white mb-3">
+                                            <input type="password" id="register-password" class="form-control form-control-sm" placeholder="Contraseña" required />
+                                        </div>
+                                        <div class="form-outline form-white mb-3">
+                                            <input type="password" id="register-confirm-password" class="form-control form-control-sm" placeholder="Confirmar contraseña" required />
+                                        </div>
+                                        <button class="btn btn-outline-light btn-sm w-100" type="submit">Completar Registro</button>
+                                    </form>
+                                </div>
+                                <div>
+                                    <p class="mb-0">¿Ya tienes cuenta? <a href="registro.html" class="text-white-50 fw-bold">Inicia sesión</a></p>
+                                </div>
                             </div>
                         </div>
-                    </form>
-                </section>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+
         <div id="footer">
             <div class="container">
                 <div class="row">

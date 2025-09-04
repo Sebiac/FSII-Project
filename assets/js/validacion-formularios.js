@@ -1,7 +1,7 @@
 // Validación unificada para contacto, login y registro
 
 (function() {
-    function validarCampos({ nombre, email, password, confirm, mensaje, tipo }) {
+    function validarCampos({ nombre, email, password, confirm, confirmemail, mensaje, tipo }) {
         let errores = [];
         // Nombre: min 10, max 100 (si aplica)
         if (nombre) {
@@ -14,6 +14,12 @@
             const emailVal = email.value.trim();
             if (!emailVal || emailVal.length > 100 || !/^.+@(duoc\.cl|profesor\.duoc\.cl|gmail\.com)$/.test(emailVal)) {
                 errores.push('Correo debe ser @duoc.cl, @profesor.duoc.cl o @gmail.com y máximo 100 caracteres');
+            }
+        }
+        // Confirmación de email
+        if (confirmemail && email) {
+            if (email.value !== confirmemail.value) {
+                errores.push('El email no coincide');
             }
         }
         // Contraseña: 4 a 10 caracteres
@@ -76,14 +82,17 @@
         registerForm.addEventListener('submit', function(e) {
             const nombre = document.getElementById('register-nombre');
             const email = document.getElementById('register-email');
+            const confirmemail = document.getElementById('register-confirm-email');
             const password = document.getElementById('register-password');
             const confirm = document.getElementById('register-confirm-password');
-            let errores = validarCampos({ nombre, email, password, confirm, tipo: 'registro' });
+            let errores = validarCampos({ nombre, email, confirmemail, password, confirm, tipo: 'registro' });
             if (errores.length > 0) {
                 e.preventDefault();
                 alert(errores.join('\n'));
             } else {
+                e.preventDefault();
                 alert('¡Registro exitoso!');
+                window.location.href = 'login.html';
             }
         });
     }
