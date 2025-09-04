@@ -1,5 +1,4 @@
-export const productosPhonk = [
-    {
+export const productosPhonk = [{
         titulo: "BRAZILIAN VOCALS",
         imagen: "images/brazil-vocals.png",
         desc: "+10 vocales estilo Phonk Brasileño",
@@ -65,16 +64,16 @@ export function renderCatalogoPhonk() {
         const desc = producto.desc || '';
         const titulo = producto.titulo || '';
 
-        const audioHtml = audioSrc
-            ? `<audio controls id="audio${idx+1}" style="width:100%;margin:0.5em 0 0.7em 0;" onplay="this.volume=0.02" onvolumechange="this.volume=Math.min(this.volume,0.06)" controlsList="nodownload noplaybackrate novolume">
-                    <source src="${audioSrc}" type="audio/mpeg">
-                    Tu navegador no soporta el elemento de audio.
-               </audio>`
-            : '';
+        const audioHtml = audioSrc ?
+            `<audio controls id="audio${idx+1}" style="width:100%;height:48px;margin:0.5em 0 0.7em 0;" onplay="this.volume=0.04" onvolumechange="this.volume=Math.min(this.volume,0.5)" controlsList="nodownload noplaybackrate">
+            <source src="${audioSrc}" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+           </audio>` :
+            '';
 
-        const mediaHtml = audioSrc
-            ? audioHtml
-            : (desc ? `<p class="catalog-desc">${desc}</p>` : '');
+        const mediaHtml = audioSrc ?
+            audioHtml :
+            (desc ? `<p class="catalog-desc">${desc}</p>` : '');
 
         html += `
         <div class="col-4 col-12-mobile">
