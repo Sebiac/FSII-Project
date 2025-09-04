@@ -8,7 +8,7 @@ export const productosPhonk = [
     {
         titulo: "BRAZILIAN SAMPLES",
         imagen: "images/brazilian-samples.png",
-        desc: "+20 samples estilo Phonk Brasiseño",
+        desc: "+20 samples estilo Phonk Brasileño",
         precio: "$1.99 USD"
     },
     {
