@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
 @import url("fontawesome-all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@700&display=swap");
 
 /*
 	Helios by HTML5 UP
@@ -193,18 +194,27 @@ textarea {
 }
 
 .categoria-brasil {
-    color: #009739;
+    color: #009739 !important;
     font-weight: bold;
 }
 
 .categoria-chile {
-    color: #d52b1e;
+    color: #d52b1e !important;
     font-weight: bold;
 }
 
 .categoria-italian {
     color: #009739;
     font-weight: bold;
+}
+
+.catalog-desc {
+    margin: 0.35em 0 0.6em 0;
+    padding: 0;
+    line-height: 1.25;
+    font-size: 0.95rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #444;
 }
 
 .phonk-title {

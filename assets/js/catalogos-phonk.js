@@ -1,16 +1,14 @@
 export const productosPhonk = [
     {
-        titulo: "SENTA CARA",
-        artista: "JMILTON",
-        imagen: "images/senta-cara.jpg",
-        audio: "assets/music/song1.mp3",
-        precio: "$1.99 USD"
+        titulo: "BRAZILIAN VOCALS",
+        imagen: "images/brazil-vocals.png",
+        desc: "+10 vocales estilo Phonk Brasileño",
+        precio: "$2.99 USD"
     },
     {
-        titulo: "Montagem Tomada",
-        artista: "MXZI",
-        imagen: "images/montagem_tomada.jpg",
-        audio: "assets/music/song2.mp3",
+        titulo: "BRAZILIAN SAMPLES",
+        imagen: "images/brazilian-samples.png",
+        desc: "+20 samples estilo Phonk Brasiseño",
         precio: "$1.99 USD"
     },
     {
@@ -59,19 +57,35 @@ export function renderCatalogoPhonk() {
             if (idx !== 0) html += '</div>';
             html += '<div class="row gtr-50 catalogo-phonk">';
         }
+
+        const artistHtml = producto.artista ? `<div class="phonk-artist">${producto.artista}</div>` : '';
+        const precioHtml = `<div class="catalog-price grad-text">${producto.precio}</div>`;
+        const imgSrc = producto.imagen || '';
+        const audioSrc = producto.audio || '';
+        const desc = producto.desc || '';
+        const titulo = producto.titulo || '';
+
+        const audioHtml = audioSrc
+            ? `<audio controls id="audio${idx+1}" style="width:100%;margin:0.5em 0 0.7em 0;" onplay="this.volume=0.02" onvolumechange="this.volume=Math.min(this.volume,0.06)" controlsList="nodownload noplaybackrate novolume">
+                    <source src="${audioSrc}" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+               </audio>`
+            : '';
+
+        const mediaHtml = audioSrc
+            ? audioHtml
+            : (desc ? `<p class="catalog-desc">${desc}</p>` : '');
+
         html += `
         <div class="col-4 col-12-mobile">
             <section class="catalog-card">
-                <div class="catalog-price grad-text">${producto.precio}</div>
-                <a href="#" class="image fit"><img src="${producto.imagen}" alt="${producto.titulo}" /></a>
+                ${precioHtml}
+                <a href="#" class="image fit"><img src="${imgSrc}" alt="${titulo}" /></a>
                 <header>
-                    <h3 class="phonk-title" style="font-size:1.3em;">${producto.titulo}</h3>
-                    <div class="phonk-artist">${producto.artista}</div>
+                    <h3 class="phonk-title" style="font-size:1.3em;">${titulo}</h3>
+                    ${artistHtml}
                 </header>
-                <audio controls id="audio${idx+1}" style="width:100%;margin:0.5em 0 0.7em 0;" onplay="this.volume=0.02" onvolumechange="this.volume=Math.min(this.volume,0.06)" controlsList="nodownload noplaybackrate novolume">
-                    <source src="${producto.audio}" type="audio/mpeg">
-                    Tu navegador no soporta el elemento de audio.
-                </audio>
+                ${mediaHtml}
                 <div class="catalog-actions">
                     <button class="btn-catalog buy">Comprar</button>
                     <button class="btn-catalog cart">Añadir al carro</button>
@@ -84,5 +98,3 @@ export function renderCatalogoPhonk() {
     const cont = document.getElementById('catalogo-phonk-container');
     if (cont) cont.innerHTML = html;
 }
-
-// Agregar segundo catalogo bajo este comment
