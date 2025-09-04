@@ -1,26 +1,26 @@
-export const productosPhonk = [{
+const productosPhonk = [{
         titulo: "BRAZILIAN VOCALS",
         imagen: "images/brazil-vocals.png",
-        desc: "+10 vocales estilo Phonk Brasileño",
+        desc: "+10 vocales Phonk Brasileño",
         precio: "$2.99 USD"
     },
     {
         titulo: "BRAZILIAN SAMPLES",
         imagen: "images/brazilian-samples.png",
-        desc: "+20 samples estilo Phonk Brasileño",
+        desc: "+20 samples Phonk Brasileño",
         precio: "$1.99 USD"
     },
     {
-        titulo: "Sem Freio",
-        artista: "JMILTON, REPSAJ",
-        imagen: "images/sem_freio.jpg",
-        audio: "assets/music/song3.mp3",
+        titulo: "BRAZILIAN SAMPLES GEMS",
+        imagen: "images/brazilian-sample-gems.jpg",
+        desc: "+20 samples Phonk Brasileño GEMS",
+        audio: "assets/music/brazilian-sample-gems.mp3",
         precio: "$1.99 USD"
     },
     {
-        titulo: "VEM NO PIQUE",
-        artista: "MAFIA",
-        imagen: "images/vem-no-pique.jpg",
+        titulo: "BRAZILIAN SAMPLES FUSION",
+        imagen: "images/brazilian-sample-fusion.png",
+        desc: "+20 samples Phonk Brasileño FUSION",
         audio: "assets/music/song4.mp3",
         precio: "$1.99 USD"
     },
@@ -49,7 +49,7 @@ export const productosPhonk = [{
 
 
 
-export function renderCatalogoPhonk() {
+function renderCatalogoPhonk() {
     let html = '';
     productosPhonk.forEach((producto, idx) => {
         if (idx % 3 === 0) {
