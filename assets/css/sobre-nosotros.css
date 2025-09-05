@@ -1,0 +1,70 @@
+body {
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif !important;
+    font-size: 1.08rem;
+    color: #fff;
+}
+
+.about-section h2 {
+    font-family: 'Orbitron', 'Montserrat', Arial, sans-serif !important;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 2.2em;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 0.7em;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+.about-section h2,
+.about-section h3 {
+    font-family: 'Orbitron', 'Montserrat', Arial, sans-serif !important;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+body {
+    background: url('../../images/header.png') center center/cover no-repeat !important;
+    background-attachment: fixed !important;
+}
+
+.about-section ul {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    padding-left: 1.2rem;
+    font-size: 1.1rem;
+}
+
+.about-section li {
+    margin-bottom: 0.7rem;
+    line-height: 1.7;
+}
+
+.about-section li b {
+    color: #ef8376;
+    font-weight: 700;
+}
+
+.about-section p.lead {
+    font-size: 1.18rem;
+    margin-bottom: 1.2rem;
+    margin-top: 0.5rem;
+    line-height: 1.8;
+    color: #fff;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.10);
+}
+
+.about-logo-large {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 4px 24px rgba(0, 0, 0, 0.18));
+    border-radius: 18px;
+    background: none;
+    padding: 0;
+}
+
+.about-section .row>div:last-child {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}

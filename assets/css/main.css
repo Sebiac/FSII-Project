@@ -1,55 +1,5 @@
-#footer .container,
-#footer .row,
-#footer .col-12,
-#footer .contact,
-#footer .copyright,
-#footer .icons,
-#footer .menu {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-}
-
-
-/* Footer centrado y estilizado */
-
-#footer .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-#footer {
-    padding-top: 0;
-    padding-bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#footer .contact {
-    margin-bottom: 0.1em;
-}
-
-#footer .icons {
-    font-size: 2em;
-    justify-content: center;
-    display: flex;
-    gap: 1em;
-}
-
-#footer .contact {
-    text-align: center;
-}
-
-#footer .copyright {
-    text-align: center;
-}
-
-
 /* Enlaces de login y registro en color morado oscuro */
+
 #nav ul li ul li a.purple-link,
 a.iniciar-sesion.purple-link,
 a.registro.purple-link {

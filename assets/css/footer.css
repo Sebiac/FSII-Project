@@ -1,0 +1,42 @@
+/* Footer styles for all pages */
+
+#footer {
+    margin-top: 0 !important;
+    padding-top: 1.5em !important;
+    padding-bottom: 1.5em !important;
+    background: #2b252c !important;
+    color: #fff !important;
+    border: none !important;
+    font-size: 0.95em !important;
+    text-align: center;
+}
+
+#footer .container,
+#footer .row,
+#footer .col-12,
+#footer .contact,
+#footer .copyright,
+#footer .icons,
+#footer .menu {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+#footer .icons {
+    font-size: 1.3em !important;
+    gap: 0.7em !important;
+    padding: 0.2em 0.5em !important;
+}
+
+#footer .contact h3 {
+    font-size: 1.1em !important;
+    margin-bottom: 0.5em !important;
+}
+
+#footer .copyright {
+    font-size: 0.85em !important;
+    margin-top: 0.5em !important;
+}
