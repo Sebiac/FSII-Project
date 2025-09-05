@@ -11,7 +11,7 @@ function renderPhonkCarrusel() {
                     <h5 class="card-title">${producto.titulo}</h5>
                     ${producto.desc ? `<p class="catalog-desc">${producto.desc}</p>` : ''}
                     <div>
-                        <button class="btn btn-success btn-sm me-2"><a href="../catalogo-phonk-brasileno.html">Ver Producto</a></button>
+                        <a href="../catalogo-phonk-brasileno.html" class="btn-cards">Ver Producto</a>
                     </div>
                 </div>
             </div>

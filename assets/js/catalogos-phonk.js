@@ -1,13 +1,13 @@
 const productosPhonk = [{
-        titulo: "BRAZILIAN VOCALS",
+        titulo: "BRAZILIAN VOCALS VOL.2",
         imagen: "images/brazil-vocals.png",
-        desc: "+10 vocales Phonk Brasileño",
+        desc: "+10 vocales Phonk Brasileño (NUEVO)",
         precio: "$2.99 USD"
     },
     {
-        titulo: "BRAZILIAN SAMPLES",
+        titulo: "BRAZILIAN SAMPLES VOL.1",
         imagen: "images/brazilian-samples.png",
-        desc: "+20 samples Phonk Brasileño",
+        desc: "+20 samples Phonk Brasileño (NUEVO)",
         precio: "$1.99 USD"
     },
     {
@@ -21,30 +21,23 @@ const productosPhonk = [{
         titulo: "BRAZILIAN SAMPLES FUSION",
         imagen: "images/brazilian-sample-fusion.png",
         desc: "+20 samples Phonk Brasileño FUSION",
-        audio: "assets/music/song4.mp3",
+        audio: "assets/music/brazilian-phonk-fusion.mp3",
         precio: "$1.99 USD"
     },
     {
-        titulo: "ACELERADA",
-        artista: "SMA$HER",
-        imagen: "images/acelerada.jpg",
-        audio: "assets/music/song5.mp3",
+        titulo: "BRAZILIAN SAMPLES TRENDS",
+        imagen: "images/brazilian-sample-trend.png",
+        desc: "+20 samples Phonk Brasileño para TRENDS",
+        audio: "assets/music/brazilian-phonk-trends.mp3",
         precio: "$1.99 USD"
     },
     {
-        titulo: "Montagem Xonada",
-        artista: "MXZI, DJ SAMIR, DJ JAVI26",
-        imagen: "images/montagem_xonada.jpg",
-        audio: "assets/music/song6.mp3",
+        titulo: "BRAZILIAN PHONK DRUM KIT",
+        imagen: "images/brazilian-phonk-drum-kit.jpg",
+        desc: "+10 kits de Drums para Phonk Brasileño",
+        audio: "assets/music/brazilian-phonk-drum-kit.mp3",
         precio: "$1.99 USD"
     },
-    {
-        titulo: "VEI SEI",
-        artista: "repsaj",
-        imagen: "images/vei_sei.jpg",
-        audio: "assets/music/song7.mp3",
-        precio: "$1.99 USD"
-    }
 ];
 
 
@@ -71,9 +64,7 @@ function renderCatalogoPhonk() {
            </audio>` :
             '';
 
-        const mediaHtml = audioSrc ?
-            audioHtml :
-            (desc ? `<p class="catalog-desc">${desc}</p>` : '');
+       const mediaHtml = (audioSrc ? audioHtml : '') + (desc ? `<p class="catalog-desc">${desc}</p>` : '');
 
         html += `
         <div class="col-4 col-12-mobile">

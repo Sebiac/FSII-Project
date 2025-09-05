@@ -169,6 +169,7 @@ textarea {
 .destacado-header {
     color: #fff !important;
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 .destacado-sub-header {
@@ -2624,6 +2625,28 @@ body.homepage.is-preload #header:after {
     vertical-align: top;
 }
 
+.carousel article .btn-cards,
+.carousel article a.button-cards {
+    display: inline-block;
+    background: #4b2673;
+    color: #fff;
+    padding: 0.5em 1.2em;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+    margin-bottom: 0em;
+}
+
+.carousel article .btn-cards:hover,
+.carousel article a.button-.btn-cards {
+    background: linear-gradient(90deg,#6f3b9b 0%,#ef8376 100%);
+}
+
+.carousel .reel article {
+    box-sizing: border-box;
+    vertical-align: top;
+}
 
 /* Wide */
 
