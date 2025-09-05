@@ -1,21 +1,5 @@
 /* Enlaces de login y registro en color morado oscuro */
 
-#nav ul li ul li a.purple-link,
-a.iniciar-sesion.purple-link,
-a.registro.purple-link {
-    color: #4B006E !important;
-    font-weight: bold !important;
-    background: transparent !important;
-    border: none !important;
-}
-
-
-/* Opcional: color al pasar el mouse */
-
-.purple-link:hover {
-    color: #7C1FA0 !important;
-}
-
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@700&display=swap");
