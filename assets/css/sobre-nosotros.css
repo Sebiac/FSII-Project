@@ -44,6 +44,10 @@ body {
     font-weight: 700;
 }
 
+.parrafo-destacado {
+    color: #000000;
+}
+
 .about-section p.lead {
     font-size: 1.18rem;
     margin-bottom: 1.2rem;
