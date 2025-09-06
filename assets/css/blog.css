@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic,600");
+@import url("fontawesome-all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@700&display=swap");
+
+body {
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif !important;
+    font-size: 1.08rem;
+    color: #fff;
+}
+
+.blog-img {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
+}
+
+.blog-title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.blog-resu {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.news-card {
+    background: rgba(255,255,255,0.03);
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.45);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;       /* ancho de la card */
+    margin: 1rem auto;      /* centra la card */
+}
+
+/* media (imagen) ocupa todo el ancho */
+.news-card .card-media { width: 100%; display:block; }
+.news-card .card-media .blog-img {
+    width: 100%;
+    max-height: 220px;         /* altura máxima, permite mostrar imagen completa */
+    height: auto;
+    object-fit: contain; /* no recorta, adapta la imagen dentro del contenedor */
+    display: block;
+    background: #0a0a0a; /* evita bordes transparentes si la imagen tiene ratio diferente */
+}
+
+/* contenido (título, fecha, resumen, botones) */
+.news-card .card-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.news-card .news-title {
+    text-align: center;
+    margin: 0;
+    font-weight: 700;
+}
+.news-card .news-date { text-align: center; color: #d0cfe0; font-size: .85rem; }
+
+/* resumen más ancho y legible */
+
+/* === Variantes de fondo sólidas para las noticias (sin transparencias) === */
+.news-card { background: #0f1113; color: #f5f5f5; }
+
+.news-card.bg-indigo {
+    background: #4b2673; /* morado profundo */
+    color: #ffffff;
+}
+.news-card.bg-teal {
+    background: #0f6b6b; /* verde azulado */
+    color: #ffffff;
+}
+.news-card.bg-charcoal {
+    background: #1f2327; /* carbón oscuro */
+    color: #ffffff;
+}
+.news-card.bg-sunset {
+    background: #a63b3b; /* rojo atardecer */
+    color: #ffffff;
+}
+.news-card.bg-glass {
+    background: #f6f7f8; /* claro, sin transparencia */
+    color: #111111;
+}
+
+/* hover ligero para las cards */
+.news-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.45);
+}
+
+/* aseguramos que el contenido herede el color correcto */
+.news-card .card-content, .news-card .card-media, .news-card .catalog-desc {
+    color: inherit;
+}
+
+/* colocar acciones al final (si quieres que el botón quede abajo) */
+.news-card .catalog-actions { margin-top: 0.5rem; display:flex; justify-content:center; gap:.5rem; }
+
+/* responsive: en pantallas pequeñas la altura de la imagen disminuye */
+@media (max-width: 480px) {
+    .news-card .card-media .blog-img { height: 140px; }
+    .news-card { max-width: 100%; margin: .75rem; }
+}
+
+/* --- Estilos del modal in-page para noticias --- */
+.news-modal { position: fixed; inset: 0; display: none; z-index: 1100; }
+.news-modal.open { display: block; }
+.news-modal-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.6); }
+.news-modal-dialog { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: min(920px, 95%); max-height: 90vh; overflow: auto; background: var(--card-bg, #0f1113);
+    border-radius: 10px; box-shadow: 0 20px 60px rgba(0,0,0,0.6); padding: 1rem; color: inherit;
+}
+.news-modal-close { position: absolute; right: 12px; top: 8px; background: transparent; border: none; color: inherit; font-size: 1.6rem; cursor: pointer; }
+.news-modal-body { padding: 0.5rem 0; }
+.modal-title { margin: 0 0 .4rem 0; font-size: 1.4rem; }
+.modal-date { display: block; color: #cfcfe2; margin-bottom: .6rem; }
+.modal-img { width: 100%; height: auto; max-height: 360px; object-fit: contain; border-radius: 6px; margin-bottom: .6rem; background: #0a0a0a; }
+.modal-desc { line-height: 1.5; color: inherit; }
+.news-modal-actions { display:flex; gap: .75rem; justify-content: center; padding-top: .6rem; }
+.news-modal-actions button { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.06); color: inherit; padding: .5rem .8rem; border-radius: 6px; cursor: pointer; }
+.news-modal-actions button .count { margin-left: .4rem; font-weight: 700; }
+
+/* estado activo para like/dislike */
+.news-modal-actions button.active { background: linear-gradient(90deg, rgba(255,255,255,0.06), rgba(255,255,255,0.09)); box-shadow: 0 6px 18px rgba(0,0,0,0.45); transform: translateY(-2px); }
+
+@media (max-width: 680px) {
+    .news-modal-dialog { width: calc(100% - 2rem); left: 50%; transform: translate(-50%, -50%); padding: .75rem; }
+    .modal-title { font-size: 1.1rem; }
+    .modal-img { max-height: 220px; }
+}
