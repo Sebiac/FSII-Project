@@ -2150,8 +2150,14 @@ header .icon.circled {
     display: block;
     margin: 0 auto;
     margin-top: 0px;
-    height: 700px;
+    height: 350px;
     width: auto;
+}
+
+@media screen and (min-width: 1400px) {
+    #logo img {
+        height: 550px;
+    }
 }
 
 #header .inner header>p {
