@@ -184,6 +184,27 @@ textarea {
     text-align: center;
 }
 
+.featured-media {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 ratio (ajusta si tu video tiene otra relación) */
+    overflow: hidden;
+    border-radius: 6px; /* opcional */
+}
+.featured-media .featured-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* cover para llenar el cuadro; use contain si no quieres recorte */
+    display: block;
+    background: #000;
+}
+/* Si prefieres que el usuario controle reproducción en móviles */
+@media (max-width: 600px) {
+    .featured-media .featured-video { object-fit: contain; }
+}
+
 .card-img-top {
     width: 100% !important;
     height: 300px !important;

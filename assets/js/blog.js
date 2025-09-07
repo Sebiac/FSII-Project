@@ -2,8 +2,8 @@ const newsBlogs = [{
         idNoticia: "1",
         titulo: "🔥Uno de los nuevos éxitos🔥",
         fecha: "2025-09-06",
-        resumen: "Resumen de la noticia",
-        desc: "Descripción de la noticia",
+        resumen: "SEM FREIO: single Phonk con influencia brasileña, enérgico y pensado para beats urbanos.",
+        desc: "SEM FREIO mezcla cajas secas, bajos profundos y samples vocales brasileños en una melodía oscura, destacando de manera positiva en el internet, ganando alta popularidad en el último tiempo.",
         img: "images/sem_freio.jpg"
     },
 
@@ -11,18 +11,18 @@ const newsBlogs = [{
         idNoticia: "2",
         titulo: "🧐¿Qué estilo de Phonk es mejor?🧐",
         fecha: "2025-09-06",
-        resumen: "Resumen de la noticia",
-        desc: "Descripción de la noticia",
-        img: "images/sem_freio.jpg"
+        resumen: "En internet se debate mucho que estilo Phonk es mejor entre los tantos que hay...",
+        desc: "Últimamente, se ha debatido mucho en internet sobre el estilo de Phonk que tiene más visitas, likes, etc. ¿Acaso será el Phonk Brasileño, ruso, japones, o sus variantes?",
+        img: "images/acelerada.jpg"
     },
 
     {
         idNoticia: "3",
         titulo: "🥳Midnight Knight | Lanzamiento Oficial🥳",
         fecha: "2025-09-06",
-        resumen: "Resumen de la noticia",
-        desc: "Descripción de la noticia",
-        img: "images/sem_freio.jpg"
+        resumen: "¡Midnight Phonk ha salido al público oficialmente!",
+        desc: "Midnight Phonk, página para la venta y compra de herramientas para crear canciones estilos Phonk, ha salido oficialmente para ayudar a que esta comunidad crezca.",
+        img: "images/midnight-phonk.png"
     },
 ]
 
