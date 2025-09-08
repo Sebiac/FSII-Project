@@ -2181,6 +2181,33 @@ header .icon.circled {
     }
 }
 
+/* Ajustes para el formulario de registro en pantallas menores a 1366px */
+@media (max-width: 1366px) {
+    .col-5.col-md-6.col-lg-8.col-xl-3 {
+        flex: 0 0 50% !important;
+        max-width: 50% !important;
+    }
+    .card.bg-dark {
+        padding: 1rem !important;
+    }
+    .mb-4.mt-2.pb-3 img {
+        max-width: 160px !important;
+    }
+}
+
+@media (max-width: 1366px) {
+    .container.py-5 {
+        padding-top: 0rem !important;
+        padding-bottom: 0rem !important;
+        margin-top: -2rem !important;
+        margin-bottom: -2rem !important;
+    }
+    .vh-100 {
+        min-height: auto !important;
+        height: auto !important;
+    }
+}
+
 #header .inner header>p {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
