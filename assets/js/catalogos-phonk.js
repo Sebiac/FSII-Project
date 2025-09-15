@@ -78,7 +78,11 @@ function renderCatalogoPhonk() {
                 ${mediaHtml}
                 <div class="catalog-actions">
                     <button class="btn-catalog buy">Comprar</button>
-                    <button class="btn-catalog cart">Añadir al carro</button>
+                    <button class="btn-catalog cart"
+                    data-titulo="${titulo}"
+                    data-precio="${producto.precio}"
+                    data-imagen="${imgSrc}"
+                    >Añadir al carro</button>
                 </div>
             </section>
         </div>
@@ -87,4 +91,19 @@ function renderCatalogoPhonk() {
     html += '</div>';
     const cont = document.getElementById('catalogo-phonk-container');
     if (cont) cont.innerHTML = html;
+
+    document.querySelectorAll('.btn-catalog.cart').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const producto = {
+                titulo: this.dataset.titulo,
+                precio: this.dataset.precio,
+                imagen: this.dataset.imagen
+            };
+
+            let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+            carrito.push(producto);
+            localStorage.setItem('carrito', JSON.stringify(carrito));
+            alert('Si se añadió el producto, verás este mensaje');
+        });
+    });
 }
